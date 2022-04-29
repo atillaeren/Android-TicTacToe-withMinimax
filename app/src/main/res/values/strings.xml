@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TacTicToe</string>
+    <string name="appname">appName</string>
+    <string name="restart">Restart</string>
+</resources>

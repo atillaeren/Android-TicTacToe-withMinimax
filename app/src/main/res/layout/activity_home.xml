@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/nameIv"
+        android:layout_width="334dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/tactictoe"
+        android:contentDescription="@string/appname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnPlayer"
+        android:textAllCaps="false"
+        android:text="vs Player"
+        android:textColor="@color/white"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameIv"/>
+
+    <Button
+        android:id="@+id/btnAi"
+        android:textAllCaps="false"
+        android:text="vs AI"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@id/btnPlayer"
+        app:layout_constraintStart_toStartOf="@id/btnPlayer"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayer"/>
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:textAllCaps="false"
+        android:text="Easy Mode"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameIv"/>
+
+
+
+    <Button
+        android:id="@+id/btnHell"
+        android:textAllCaps="false"
+        android:text="Hard Mode"
+        android:textColor="@color/white"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="@id/btnEasy"
+        app:layout_constraintStart_toStartOf="@id/btnEasy"
+        app:layout_constraintTop_toBottomOf="@id/btnEasy"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

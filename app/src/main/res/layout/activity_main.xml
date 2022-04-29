@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/nameIv"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/app_name"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:contentDescription="@string/appname" />
+
+    <TextView
+        android:layout_marginBottom="25dp"
+        android:layout_above="@id/layout_board"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/white"
+        tools:text="Computer Won"
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" app:fontFamily="casual" android:textStyle="bold"
+        android:textAllCaps="false" android:textSize="30sp"/>
+
+    <GridLayout
+        android:id="@+id/layout_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alignmentMode="alignBounds"
+        android:columnCount="3"
+        android:padding="16dp"
+        android:rowCount="3"
+        android:useDefaultMargins="true" />
+
+    <Button
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button_restart"
+        android:textAllCaps="false"
+        android:text="@string/restart"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
